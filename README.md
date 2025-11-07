@@ -1,24 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Toggl Track Reporter
 
-## Getting Started
+A beautiful and modern web application to view and analyze your Toggl Track time entries by month. Built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Features
+
+- 📊 View time entries filtered by month
+- 📈 See total hours and summary statistics
+- 🎨 Color-coded projects
+- 🏷️ Display tags and descriptions
+- 🔄 Real-time tracking indicator for running timers
+- 📱 Responsive design
+- 🌐 RTL support for Arabic descriptions
+
+## Setup
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure API Token
+
+You have two options to set your Toggl API token:
+
+**Option A: Environment Variable (Recommended)**
+
+Create a `.env.local` file in the root directory:
+
+```bash
+TOGGL_API_TOKEN=your_api_token_here
+```
+
+**Option B: Direct in Code**
+
+Edit `app/page.tsx` and replace `YOUR_API_TOKEN_HERE` with your actual token.
+
+**Get Your API Token:**
+1. Go to [https://track.toggl.com/profile](https://track.toggl.com/profile)
+2. Scroll down to "API Token"
+3. Copy your token
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
