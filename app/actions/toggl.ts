@@ -31,7 +31,7 @@ export async function fetchTimeEntries(
           "base64"
         )}`,
       },
-      // cache: "no-store",
+      cache: "no-store",
     });
 
     if (!response.ok) {
