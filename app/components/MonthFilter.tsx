@@ -13,7 +13,7 @@ export function MonthFilter({
   selectedMonth,
   onMonthChange,
 }: MonthFilterProps) {
-  const years = [2025];
+  const years = [2025, 2026];
   const months = Array.from({ length: 12 }, (_, i) => i);
 
   const handleYearChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
